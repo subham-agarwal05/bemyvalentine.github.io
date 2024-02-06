@@ -1,0 +1,11 @@
+.screen{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+.msg{
+    display: inline-block;
+    width: 300px;
+    text-align: center;
+}

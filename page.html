@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HEhe</title>
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="screen">
+        
+        <div class="proposal">
+            <img src="../giphy.gif">
+            <div>Trina Dikshit, will you be my Valentine?</div>
+            
+        </div>
+        <div class="buttons">
+            <div class="yes-button-container">
+                <a href="./after-yes.html"><button class="yes-button" >Yes</button></a>
+
+            </div>
+            <div class="no-button-container">
+                <button id="btn">No</button>
+            </div>
+        </div>
+        
+    </div>
+    
+</body>
+<script >
+    const button = document.getElementById('btn');
+    button.addEventListener('mouseover', function () {
+        button.style.left = `${Math.ceil(Math.random() * 90)}%`;
+        button.style.top = `${Math.ceil(Math.random() * 90)}%`;
+    });
+    button.addEventListener('click', function () {
+        alert('you clicked me')
+    });
+</script>
+</html>
